@@ -9,13 +9,13 @@
 /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
-/***/ "./src/analitics.js":
-/*!**************************!*\
-  !*** ./src/analitics.js ***!
-  \**************************/
+/***/ "./analitics.js":
+/*!**********************!*\
+  !*** ./analitics.js ***!
+  \**********************/
 /***/ (() => {
 
-eval("function createAnalytics() {\r\n    let counter = 0;\r\n    let destroyed = false\r\n    const listener = () => counter++\r\n\r\n    document.addEventListener('click', listener)\r\n    return {\r\n        destroy() {\r\n            document.removeEventListener('click', listener)\r\n            isDestroyed = true\r\n        },\r\n        getClicks() {\r\n            if (destroyed) {\r\n                return `Analytics is destroyed. Total clicks = ${counter}`\r\n            }\r\n            return counter\r\n        }\r\n    }\r\n}\r\n\r\nwindow.analytics = createAnalytics();\n\n//# sourceURL=webpack://webpack-course/./src/analitics.js?");
+eval("function createAnalytics() {\r\n    let counter = 0;\r\n    let destroyed = false\r\n    const listener = () => counter++\r\n\r\n    document.addEventListener('click', listener)\r\n    return {\r\n        destroy() {\r\n            document.removeEventListener('click', listener)\r\n            isDestroyed = true\r\n        },\r\n        getClicks() {\r\n            if (destroyed) {\r\n                return `Analytics is destroyed. Total clicks = ${counter}`\r\n            }\r\n            return counter\r\n        }\r\n    }\r\n}\r\n\r\nwindow.analytics = createAnalytics();\n\n//# sourceURL=webpack:///./analitics.js?");
 
 /***/ })
 
@@ -26,7 +26,7 @@ eval("function createAnalytics() {\r\n    let counter = 0;\r\n    let destroyed 
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module can't be inlined because the eval devtool is used.
 /******/ 	var __webpack_exports__ = {};
-/******/ 	__webpack_modules__["./src/analitics.js"]();
+/******/ 	__webpack_modules__["./analitics.js"]();
 /******/ 	
 /******/ })()
 ;

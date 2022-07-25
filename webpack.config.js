@@ -24,6 +24,22 @@ plugins: [
       {
         test: /\.css$/,
         use: ['style-loader','css-loader']
+      },
+      {
+        test:/\.(png|jpg|svg|gig)$/,
+        type: 'asset/resource'
+      },
+      {
+        test: /\.(ttf|woff|woff2|eot)$/,
+        type: 'asset/resource'
+      },
+      {
+        test: /\.xml$/,
+        use: ['xml-loader']
+      },
+      {
+        test: /\.csv$/,
+        use: ['csv-loader']
       }
     ]
   }
